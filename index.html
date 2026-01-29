@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f5f5f5;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        header {
+            text-align: center;
+            padding: 40px 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            border-radius: 10px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            background: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .content h2 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .content p {
+            color: #666;
+            line-height: 1.7;
+        }
+
+        .ads-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .text-ad {
+            background: white;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            padding: 20px;
+            transition: all 0.3s ease;
+        }
+
+        .text-ad:hover {
+            border-color: #667eea;
+            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.2);
+        }
+
+        .ad-label {
+            font-size: 0.7rem;
+            color: #999;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .text-ad h3 {
+            color: #1a0dab;
+            font-size: 1.2rem;
+            margin-bottom: 8px;
+            cursor: pointer;
+        }
+
+        .text-ad h3:hover {
+            text-decoration: underline;
+        }
+
+        .text-ad .ad-url {
+            color: #006621;
+            font-size: 0.9rem;
+            margin-bottom: 8px;
+        }
+
+        .text-ad .ad-description {
+            color: #545454;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #888;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Welcome to Our Website</h1>
+            <p>Discover amazing content and offers</p>
+        </header>
+
+        <div class="content">
+            <h2>About Us</h2>
+            <p>Welcome to our website! We provide quality content and services to our visitors. 
+               Browse around to discover what we have to offer. Our team is dedicated to bringing 
+               you the best experience possible.</p>
+        </div>
+
+        <div class="ads-container">
+            <!-- Text Ad 1 -->
+            <div class="text-ad">
+                <div class="ad-label">Sponsored</div>
+                <h3>Premium Cloud Hosting - 50% Off Today!</h3>
+                <div class="ad-url">www.example-hosting.com</div>
+                <p class="ad-description">Lightning-fast servers with 99.9% uptime guarantee. 
+                   Free SSL, unlimited bandwidth, and 24/7 expert support. Start your free trial now!</p>
+            </div>
+
+            <!-- Text Ad 2 -->
+            <div class="text-ad">
+                <div class="ad-label">Sponsored</div>
+                <h3>Learn Web Development - Free Courses</h3>
+                <div class="ad-url">www.example-academy.com</div>
+                <p class="ad-description">Master HTML, CSS, and JavaScript from scratch. 
+                   Join 100,000+ students learning to code. Get certified and boost your career today!</p>
+            </div>
+        </div>
+
+        <footer>
+            <p>&copy; 2026 Example Website. All rights reserved.</p>
+        </footer>
+    </div>
+</body>
+</html>
